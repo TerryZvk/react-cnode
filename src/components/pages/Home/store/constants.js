@@ -1,0 +1,1 @@
+export const INIT_TOPIC_LIST = 'home/INIT_TOPIC_LIST';

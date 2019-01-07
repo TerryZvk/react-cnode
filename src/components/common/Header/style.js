@@ -34,6 +34,7 @@ export const Form = styled.form`
   display: inline-block;
   position: relative;
   top: -6px;
+  border: 0;
   input{
     width: 233px;
     height: 28px;
@@ -41,6 +42,9 @@ export const Form = styled.form`
     border-radius: 26px;
     padding-left: 8px;
     background: #888;
+  }
+  input:focus{
+    background: #fff;
   }
 `
 
@@ -54,6 +58,5 @@ export const Nav = styled.ul`
   a{
     color: #fff;
     font-size: 13px;
-    text-decoration: none;
   }
 `
