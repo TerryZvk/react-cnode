@@ -7,9 +7,9 @@ const TopicListAction = (list) => ({
   list: fromJS(list)
 })
 
-export const getTopicList = () => {
+export const getTopicList = (tab='all', page=1) => {
   return (dispatch) => {
-    axios.get('https://cnodejs.org/api/v1/topics').then((res) => {
+    axios.get('https://cnodejs.org/api/v1/topics/?tab='+ tab + '&page=' + page).then((res) => {
       const result = res.data.data;
       dispatch(TopicListAction(result));
     })

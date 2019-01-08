@@ -52,6 +52,23 @@ export const TopicItem = styled.div`
     float: left;
     display: block;
   }
+  .top{
+    background: #80bd01;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 8px;
+  }
+
+  .tab{
+    background-color: #e5e5e5;
+    color: #999;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin: 0 8px;
+  }
 
   .title{
     float: left;
@@ -61,5 +78,19 @@ export const TopicItem = styled.div`
   }
   .last-reply{
     float: right;
+    text-align: right;
+    min-width: 50px;
+    display: inline-block;
+    white-space: nowrap;
+    color: #778087;
+    font-size: 12px;
+    padding-right: 10px;
+    margin-top: 6px;
+  }
+  .visit-count{
+    font-size: 10px;
+    color: #b4b4b4;
+    width: 55px;
+    display: inline-block;
   }
 `
